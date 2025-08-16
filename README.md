@@ -48,7 +48,7 @@ Here's an example of a DF template of a simple function that doesn't do anything
 ```
 Blocks are placed in the order they appear in the JSON. Items are placed in the specified "slot",
 therefore the order in which the item is described in does not matter.
-We can also see chest content is stored as "args" with every item being listed in the "items" list as seen above.
+We can also see chest content is stored as "args" with every item being listed in the "items" list.
 
 # IDs
 IDs are generally used to describe every part of a template (other than lists).
