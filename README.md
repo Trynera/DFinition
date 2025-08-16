@@ -47,9 +47,13 @@ therefore the order in which the item is described in does not matter.
 We can also see chest content is stored as "args" with every item being listed in the "items" list. (more about that later)
 
 # IDs
-IDs are generally used to describe each part of a template.
-IDs can rage from blocks, to values, to variables.
-
+IDs are generally used to describe every part of a template (other than lists).
+Weirdly enough IDs aren't used equally. Every actual block has the ID block, no matter what type of block.
+I.e. the type of block gets described in "block" for every block (i.e. `"block":"func"`),
+and every item gets described in ID (i.e. `"id":"bl_tag"`).
 
 # Actions
 To understand what I'm about to tell you, you need to believe in ids.
+
+# Items
+Items exist idk man.
