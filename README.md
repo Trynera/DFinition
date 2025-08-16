@@ -4,54 +4,21 @@ A technical documentation of DF templates.
 # JSON
 DF stores templates in JSON (maybe even the code itself idk would be a bad idea tho)
 the order in which things are described themselves only really matter for blocks.
-Here's an example of a DF template that sends "Hello, World!" when a join event occours:
+
+Here's an example of a DF template of a simple function that doesn't do anything:
 ```json
 {
    "blocks":[
       {
          "id":"block",
-         "block":"event",
-         "args":{
-            "items":[
-               
-            ]
-         },
-         "action":"Join"
-      },
-      {
-         "id":"block",
-         "block":"player_action",
+         "block":"func",
          "args":{
             "items":[
                {
                   "item":{
-                     "id":"txt",
+                     "id":"hint",
                      "data":{
-                        "name":"Hello, World!"
-                     }
-                  },
-                  "slot":0
-               },
-               {
-                  "item":{
-                     "id":"bl_tag",
-                     "data":{
-                        "option":"True",
-                        "tag":"Inherit Styles",
-                        "action":"SendMessage",
-                        "block":"player_action"
-                     }
-                  },
-                  "slot":24
-               },
-               {
-                  "item":{
-                     "id":"bl_tag",
-                     "data":{
-                        "option":"Add spaces",
-                        "tag":"Text Value Merging",
-                        "action":"SendMessage",
-                        "block":"player_action"
+                        "id":"function"
                      }
                   },
                   "slot":25
@@ -60,21 +27,24 @@ Here's an example of a DF template that sends "Hello, World!" when a join event 
                   "item":{
                      "id":"bl_tag",
                      "data":{
-                        "option":"Regular",
-                        "tag":"Alignment Mode",
-                        "action":"SendMessage",
-                        "block":"player_action"
+                        "option":"False",
+                        "tag":"Is Hidden",
+                        "action":"dynamic",
+                        "block":"func"
                      }
                   },
                   "slot":26
                }
             ]
          },
-         "action":"SendMessage"
+         "data":""
       }
    ]
 }
 ```
+Blocks are placed in the order they appear in the JSON. Items are placed in the specified "slot",
+therefore the order in which the item is described in does not matter.
+We can also see chest content is stored as "args" with every item being listed in the "items" list. (more about that later)
 
 # IDs
 IDs are generally used to describe each part of a template.
