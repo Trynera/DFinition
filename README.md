@@ -64,13 +64,7 @@ All sIDs will be listed in the Items section.
 
 # Normal Items
 Normal items are just items coming from Minecraft directly, no special NBT data attached that can't be attached to any other item.
-
-Well...
-
-Other than `DF_NBT:3955`
-
-I have no idea what exactly it means or even if it is different between items. (I'm too lazy to check)
-Other than that, it simply just specifies the amount and the id (i.e. `count:1, id:\"minecraft:spruce_log\`)
+It simply just specifies the amount and the ID of the Minecraft (i.e. `count:1, id:\"minecraft:spruce_log\`)
 
 # Special Items
 Special Items refers to items provided by DF that include special NBT data. Items like Strings or Variables.
@@ -93,3 +87,9 @@ Here's a list of all Special Items and their respective IDs:
 To understand what I'm about to tell you, you need to do something first. You need to believe in ?actiondump. Can you do that?
 All jokes aside, all of the actions block ids are actually available in the discord server through the DF Bot.
 Simply just type ?actiondump in bot-cmds and you get the actiondump file. It consists
+
+# Misc
+DF_NBT is used to specify the version of the template. I'm not sure if DF actually implemented support for this, and honestly
+I doubt it. But for some reason they add this property to normal items even tho it isn't required? I have no explanation for this
+other than maybe they tried something new, realized it wouldn't really make much of a difference and decided it's just as worthless
+to change it back now. They seem to have done something similar with locations so I don't doubt the same applies here.
