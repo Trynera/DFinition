@@ -48,12 +48,12 @@ We can also see chest content is stored as "args" with every item being listed i
 
 # IDs
 IDs are generally used to describe every part of a template (other than lists).
-Weirdly enough IDs aren't used equally. Every actual block has the ID block, no matter what type of block.
-I.e. the type of block gets described in "block" for every block (i.e. `"block":"func"`),
-and every item gets described in ID (i.e. `"id":"bl_tag"`).
-
-# Actions
-To understand what I'm about to tell you, you need to believe in ids.
+Weirdly enough IDs aren't used equally. Every actual block has the ID "block", no matter what type of block.
+I.e. the type of a block gets described in "block" for every block and the ID is "block" (i.e. `"id":"block","block":"func"`),
+and every special item gets described in ID (i.e. `"id":"bl_tag"`).
 
 # Items
 Items exist idk man.
+
+# Actions
+To understand what I'm about to tell you, you need to believe in ids.
