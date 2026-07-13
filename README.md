@@ -78,7 +78,7 @@ Here's a list of all Special Items and their respective IDs:
 - Sound: snd
 - Particle: part
 - Potion: pot
-- Item: item
+- Item: item (this is just a representation of Items in the JSON)
 - Variable: var
 - Hint: hint
 - Block Tag: b_tag
